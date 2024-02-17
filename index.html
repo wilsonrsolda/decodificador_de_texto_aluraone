@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador de texto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" sizes="16x16"  href="./assets/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+<body>
+    <img class="cabecalho" src="./assets/logoAlura.png" alt="logo da Alura">
+    <h1 class="titulo">Bem-vindo ao Decodificador de Texto</h1>
+    <main class="container">
+        <div class="areaTexto">
+            <textarea class="inputs" placeholder="Digite seu texto"></textarea>
+            <p id="textoAviso" class="areaTextoAviso">&#42; Apenas letras minúsculas e sem acento.</p>
+            <div class="containerBotao">
+                <button onclick="validarEntradaCrip()">Criptografar</button>
+                <button onclick="validarEntradaDescrip()">Descriptografar</button>
+            </div>
+        </div> 
+        <div class="areaResultado">
+            <div id="resultado_cripto">
+                <img class="resultadoImagem" src="./assets/foto.png">
+                <p class="destaqueTexto">Nenhuma mensagem encontrada</p>
+
+            </div>
+            <p id="resultado"></p>
+            <div id="resultado_descripto">
+                <button onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </main> 
+    <footer class="rodape">
+        <h6>Desenvolvido por Wilson Solda | Challenger Alura One</h6>
+        <h6>Formação de Iniciante em Programação T6-ONE</h6>
+        <div class="links">
+                <a class="linksNavegacao" href="https://github.com/wilsonrsolda" target="_blank">
+                <img src="./assets/github.png">
+                
+            </a>
+            <a class="linksNavegacao" href="https://www.linkedin.com/in/wilson-solda/" target="_blank">
+                <img src="./assets/linkedin.png">
+            </a>
+            <a class="linksNavegacao" href="https://wa.me/5548991302662?text=Ol%C3%A1%20!%20Pronto%20para%20novos%20desafios%20?" target="_blank">
+                <img src="./assets/whatsapp.png">
+
+            </a>
+        </div>
+        <h6>Visite minhas redes sociais | Entre em contato | Pronto para novos desafios !</h6>
+        
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
